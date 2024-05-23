@@ -1,0 +1,16 @@
+.button-raised {
+    -fx-background-color: #00eaff;
+    -fx-background-radius: 15; /* Rounded corners */
+    -fx-border-color: #ffffff; /* Adjusted border color to complement the new background */
+    -fx-border-width: 2; /* Border width */
+    -fx-border-radius: 15; /* Ensuring border radius matches background radius */
+    -fx-text-fill: WHITE;
+    -fx-font-family: 'Impact';
+    -fx-font-size: 14px; /* Slightly larger font size for better readability */
+    -fx-padding: 5px 5px; /* Increased top and bottom padding for better alignment and button size */
+}
+
+.button-raised:hover {
+    -fx-background-color: #00eaff; /* Lighter shade when hovered */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); /* Shadow effect */
+}

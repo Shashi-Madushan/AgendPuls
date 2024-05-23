@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="405.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.finance.TabelViewController">
+   <children>
+      <TableView fx:id="transactionTable" layoutX="3.0" layoutY="2.0" prefHeight="400.0" prefWidth="400.0">
+         <columns>
+            <TableColumn fx:id="descriptionColumn" text="Description" />
+            <TableColumn fx:id="amountColumn" text="Amount" />
+            <TableColumn fx:id="categoryColumn" text="category" />
+            <TableColumn fx:id="typeColumn" text="type" />
+            <TableColumn fx:id="dateColumn" prefWidth="75.0" text="date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

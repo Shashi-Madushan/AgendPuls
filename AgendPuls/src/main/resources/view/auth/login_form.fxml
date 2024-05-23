@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginWindow" prefHeight="480.0" prefWidth="850.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.auth.LoginFormController">
+   <children>
+      <ImageView fitHeight="490.0" fitWidth="850.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/bgimg2.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#0d324a" height="285.0" layoutX="297.0" layoutY="95.0" opacity="0.64" stroke="#1d4d65" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="255.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="324.0" layoutY="118.0" text="Agenda" textFill="ORANGE">
+         <font>
+            <Font name="Ebrima Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="420.0" layoutY="116.0" text="PLUS+" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="unameTxtFiled"  alignment="TOP_LEFT" layoutX="340.0" layoutY="195.0" prefHeight="22.0" prefWidth="195.0" promptText="Username" style="-fx-background-color: fff;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pwdTxtFiled"  alignment="TOP_LEFT" layoutX="340.0" layoutY="242.0" prefHeight="22.0" prefWidth="195.0" promptText="Password" style="-fx-background-color: fff;">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="372.0" layoutY="306.0" onAction="#logInBtnOnAction" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: FFA500FF;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="309.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/userprofilefill.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="309.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/lock.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="fogotPwdBtn" buttonType="RAISED" layoutX="372.0" layoutY="341.0" onAction="#fogotPwdBtnOnAction" opacity="0.89" text="fogot password ?" textFill="#4487eb" />
+   </children>
+</AnchorPane>

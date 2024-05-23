@@ -1,0 +1,48 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.header-rectangle {
+    -fx-fill: #000fff;
+    -fx-stroke: #000fff;
+    -fx-stroke-type: inside;
+    -fx-arc-width: 10;
+    -fx-arc-height: 10;
+}
+
+.side-pane {
+    -fx-background-color: #fff;
+
+}
+
+.round-button {
+    -fx-padding: 0; /* Removes padding inside the button */
+    -fx-background-radius: 28; /* Keeps the button rounded */
+    -fx-border-radius: 28; /* Consistent styling with the background */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);
+}
+
+
+.back-button {
+    -fx-background-color: white;
+}
+
+.back-button:hover {
+    -fx-background-color: #e0e0e0; /* Light grey background on hover */
+}
+
+/* Additional styles for hover effects */
+.round-button:hover, .simple-button:hover {
+    -fx-background-color: #f2f2f2;
+    -fx-transition: background-color 0.3s ease-in;
+}
+
+/* Enhancing the ListView appearance */
+.list-view {
+    -fx-background-color: #fff;
+    -fx-border-color: #00eaff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 3px;
+    -fx-padding: 5px;
+}
+

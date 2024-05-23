@@ -1,0 +1,51 @@
+.day-node {
+    -fx-background-color: #FFFFFF;  /* Primary white */
+    -fx-border-color: #FFFFFF;  /* Pure white for borders */
+    -fx-border-width: 1;
+    -fx-padding: 5px;
+    -fx-transition: all 0.3s ease;
+}
+
+.day-node:hover {
+    -fx-background-color: #F2F2F2;  /* Light gray on hover */
+    -fx-border-color: black;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 5);
+}
+
+
+.button:hover {
+    -fx-background-color: #F2F2F2;
+}
+
+.title-bar {
+    -fx-background-color: #3167f1;
+    -fx-padding: 10px;
+    -fx-text-fill: #ffffff;  /* Adjust text color for visibility */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    display: -fx-flex;
+    -fx-flex-direction: row;
+    -fx-justify-content: space-between;
+    -fx-align-items: center;
+}
+
+.day-today {
+    -fx-background-color: #00eaff; /* Light Blue */
+    -fx-opacity: 1.0;
+}
+.day-current-month {
+    -fx-background-color: #FFFFFF; /* Pure White */
+    -fx-opacity: 1.0;
+}
+.day-other-month {
+    -fx-background-color: #A9A9A9; /* Light Gray */
+    -fx-opacity: 0.5;
+}
+.custom-day-name {
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14px;
+    -fx-fill: black;
+}
+

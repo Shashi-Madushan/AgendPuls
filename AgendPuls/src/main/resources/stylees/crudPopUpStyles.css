@@ -1,0 +1,45 @@
+.root {
+
+    -fx-background-color: #f0f0f0;
+}
+
+.button {
+    -fx-base: #2d3447;
+
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 1);
+    -fx-padding: 5 10 5 10;
+    -fx-font-weight: bold;
+}
+
+.text-field, .text-area {
+    -fx-control-inner-background: white;
+    /*-fx-text-fill: #333;
+    -fx-prompt-text-fill: #666;*/
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.label {
+    -fx-text-fill: #2d3447;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.jfx-text-area {
+    -fx-control-inner-background: white;
+   /* -fx-text-fill: #333;
+    -fx-prompt-text-fill: #666;*/
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.jfx-check-box {
+    -fx-text-fill: #2d3447;
+    -fx-font-size: 14px;
+}

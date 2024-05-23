@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="913.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.DashBoardController">
+   <stylesheets>
+      <URL value="@/stylees/dashBoardStyles.css" />
+   </stylesheets>
+   <children>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="500.0" layoutX="5.0" layoutY="4.0" stroke="#0097ff" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="115.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="500.0" layoutX="133.0" layoutY="4.0" stroke="#00b4ff" strokeType="INSIDE" strokeWidth="3.0" width="777.0">
+         <effect>
+            <DropShadow height="1.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.46580952405929565" green="0.20999999344348907" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect></Rectangle>
+      <AnchorPane fx:id="centerViewAnchorPane" layoutX="142.0" layoutY="12.0" style="-fx-background-color: #FFFFFF;" />
+      <JFXButton fx:id="financeViewBtn" buttonType="RAISED" layoutX="20.0" layoutY="327.0" onAction="#showFinanceViewOnClick" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: #0066ff; -fx-background-radius: 15;" styleClass="button-raised" text="" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/moneyBag.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="32.72" radius="18.7925" spread="0.03" width="44.45" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="calenderMonthViewBtn" buttonType="RAISED" layoutX="20.0" layoutY="173.0" onAction="#showCalenderMonthViewOnClick" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: #0066ff; -fx-background-radius: 15;" styleClass="button-raised" text="" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/monthView.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="32.72" radius="18.7925" spread="0.03" width="44.45" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="calenderDayViewBtn" buttonType="RAISED" contentDisplay="CENTER" layoutX="20.0" layoutY="97.0" onAction="#homeButtonOnclick" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: #0066ff; -fx-background-radius: 15;" styleClass="button-raised" text="" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="32.72" radius="18.7925" spread="0.03" width="44.45" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="calenderWeekViewBtn" buttonType="RAISED" layoutX="20.0" layoutY="250.0" onAction="#showCalenderWeekViewOnClick" prefHeight="48.0" prefWidth="79.0" style="-fx-background-color: #0066ff; -fx-background-radius: 15;" styleClass="button-raised" text="" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/weekView.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow height="32.72" radius="18.7925" spread="0.03" width="44.45" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="21.0" layoutY="24.0" text="Agenda" textFill="#000fff">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="52.0" text="PLUS+" textFill="#000fff">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

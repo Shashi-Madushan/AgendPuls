@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="445.0" prefWidth="370.0" style="-fx-border-color: #00eaff; -fx-border-radius: 25; -fx-border-width: 3;" stylesheets="/stylees/crudPopUpStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.calander.CreateTaskViewController">
+     <Button fx:id="closeButton" layoutX="125.0" layoutY="378.0" onAction="#closePopup" prefHeight="25.0" prefWidth="79.0" text="Close" />
+   <Button fx:id="addBtn" layoutX="229.0" layoutY="378.0" onAction="#addTask" prefHeight="25.0" prefWidth="79.0" text="Add" />
+   <TextField fx:id="taskNAme" layoutX="113.0" layoutY="32.0" prefHeight="25.0" prefWidth="200.0" />
+   <Label layoutX="28.0" layoutY="36.0" text="Task Name" />
+   <TextField fx:id="description" layoutX="113.0" layoutY="72.0" prefHeight="25.0" prefWidth="200.0" />
+   <Label layoutX="28.0" layoutY="76.0" text="Description" />
+   <Label layoutX="30.0" layoutY="117.0" text="Notes" />
+   <JFXTextArea fx:id="noteTextArea" layoutX="113.0" layoutY="106.0" prefHeight="71.0" prefWidth="200.0" />
+   <Button fx:id="setTimeBtn" layoutX="124.0" layoutY="201.0" mnemonicParsing="false" onAction="#setTimeBtnOnAction" prefHeight="25.0" prefWidth="79.0" text="Set Time" />
+   <Button fx:id="addAtachmentsBtn" layoutX="228.0" layoutY="201.0" mnemonicParsing="false" onAction="#addAtachmentsBtnOnAction" prefHeight="25.0" prefWidth="79.0" text="Atachments" />
+   <JFXCheckBox fx:id="setReminderCheckBox" layoutX="124.0" layoutY="244.0" onAction="#SetReminderCheckBoxOnAction" text="Set Reminder" />
+   <JFXListView fx:id="atachmentsListView" layoutX="120.0" layoutY="273.0" prefHeight="98.0" prefWidth="200.0" />
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.finance.FinanceViewController">
+   <children>
+      <AnchorPane fx:id="leftAncherPane" layoutX="1.0" prefHeight="480.0" prefWidth="328.0" />
+      <AnchorPane fx:id="rightAncherPane" layoutX="332.0" prefHeight="408.0" prefWidth="407.0" style="-fx-background-color: lightgray;" />
+      <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="478.0" layoutY="423.0" onAction="#deleteBtnOnAction" styleClass="button" text="">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="cataroryBtn" buttonType="RAISED" layoutX="566.0" layoutY="423.0" onAction="#cagagoryBtnOnAction" styleClass="button" text="">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/catogary.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="addBtn" buttonType="RAISED" layoutX="646.0" layoutY="423.0" onAction="#addBtnOnClickAction" styleClass="button" text="">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/img.png" />
+               </image></ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="396.0" layoutY="424.0" onAction="#cancelBtnOnAction" styleClass="button" text="">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

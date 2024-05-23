@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginWindow" prefHeight="480.0" prefWidth="845.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.auth.RegisterFormController">
+    <children>
+      <ImageView fitHeight="482.0" fitWidth="860.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/bgimg2.png" />
+         </image>
+      </ImageView>
+        <Rectangle arcHeight="40.0" arcWidth="40.0" height="442.0" layoutX="275.0" layoutY="18.0" opacity="0.68" stroke="#98a2bd" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="294.0" />
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="69.0" text="Agenda" textFill="#7d75eb">
+            <font>
+                <Font name="Ebrima Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="424.0" layoutY="66.0" text="PLUS+" textFill="#b6b3e4" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Franklin Gothic Medium" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="unameTxtFiled" alignment="TOP_LEFT" layoutX="335.0" layoutY="150.0" prefHeight="22.0" prefWidth="195.0" promptText="Username" style="-fx-background-color: #65749D;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <font>
+                <Font name="Times New Roman" size="12.0" />
+            </font></TextField>
+        <PasswordField fx:id="pwdTxtFiled" alignment="TOP_LEFT" layoutX="335.0" layoutY="197.0" prefHeight="22.0" prefWidth="195.0" promptText="Password" style="-fx-background-color: #65749D;">
+            <font>
+                <Font name="Times New Roman" size="12.0" />
+            </font>
+        </PasswordField>
+        <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="304.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/userprofilefill.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="304.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/lock.png" />
+            </image>
+        </ImageView>
+      <PasswordField fx:id="confPwdTxtFiled1" alignment="TOP_LEFT" layoutX="335.0" layoutY="239.0" prefHeight="22.0" prefWidth="195.0" promptText="Conform Password" style="-fx-background-color: #65749D;">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="304.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/lock.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="secQuesDropDown" focusColor="BLACK" layoutX="335.0" layoutY="316.0" prefHeight="14.0" prefWidth="195.0" promptText="Select a Question" style="-fx-background-color: #65749D;" unFocusColor="BLACK" visibleRowCount="5" />
+      <TextField fx:id="secuQuesAnswerTxtFiled" alignment="TOP_LEFT" layoutX="335.0" layoutY="350.0" prefHeight="22.0" prefWidth="195.0" promptText="answer" style="-fx-background-color: #65749D;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </TextField>
+      <Line endX="118.0" layoutX="416.0" layoutY="286.0" startX="-105.0" />
+      <Label layoutX="379.0" layoutY="292.0" opacity="0.61" prefHeight="17.0" prefWidth="98.0" text="Security Question" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+        <JFXButton fx:id="registerBtn" buttonType="RAISED" layoutX="369.0" layoutY="397.0" onAction="#regiterBtnOnAction" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #3A6CF6;" text="Register" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman" size="12.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

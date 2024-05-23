@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="445.0" prefWidth="370.0" style="-fx-border-color: #00eaff; -fx-border-radius: 25; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.shashi.agendaplus.controllers.calander.DefaultDayViewSidePaneView">
+   <children>
+      <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="107.0" layoutY="375.0" onAction="#deleteBtnOnAction" prefHeight="50.0" prefWidth="50.0" styleClass="round-button" text="">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="186.0" layoutY="373.0" onAction="#updateBtnOnAction" prefHeight="55.0" prefWidth="65.0" styleClass="round-button" text="">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/update.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <TextField fx:id="taskNAme" layoutX="115.0" layoutY="18.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="taskNameTxt" layoutX="30.0" layoutY="22.0" text="Task Name" />
+      <TextField fx:id="description" layoutX="115.0" layoutY="58.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label fx:id="descText" layoutX="30.0" layoutY="62.0" text="Description" />
+      <Label fx:id="noteTxt" layoutX="32.0" layoutY="103.0" text="Notes" />
+      <JFXTextArea fx:id="noteTextArea" layoutX="115.0" layoutY="92.0" prefHeight="67.0" prefWidth="200.0" />
+      <JFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="27.0" layoutY="374.0" onAction="#cancelBtnOnAction" prefHeight="50.0" prefWidth="50.0" styleClass="round-button" text="">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="addTaskBtn" buttonType="RAISED" layoutX="265.0" layoutY="371.0" onAction="#addTaskBtnOnaction" prefHeight="50.0" prefWidth="61.0" styleClass="round-button" text="">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/addBtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXListView fx:id="atachmentsListView" layoutX="119.0" layoutY="255.0" prefHeight="109.0" prefWidth="200.0" />
+      <Label fx:id="timeText" layoutX="119.0" layoutY="183.0" text="Task Time" />
+      <Label fx:id="taskTimeLbl" layoutX="205.0" layoutY="183.0" text="Label" />
+      <JFXButton fx:id="addAtachmets" layoutX="189.0" layoutY="223.0" onAction="#AddAtachementsOnClick" prefHeight="25.0" prefWidth="119.0" text="Add Atachments" />
+   </children>
+</AnchorPane>
