@@ -34,7 +34,7 @@ public class RemindersRepo {
 
     public static List<Reminder> getReminders(LocalDate filterDate) throws SQLException {
         List<Reminder> reminders = new ArrayList<>();
-        String SELECT_REMINDERS_BY_DATE_SQL = "SELECT * FROM reminders WHERE reminderDate = ? AND shown = 0";
+        String SELECT_REMINDERS_BY_DATE_SQL = "SELECT * FROM reminders WHERE reminderDate = ? AND shown = 0 AND reminderTime > NOW()";
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;

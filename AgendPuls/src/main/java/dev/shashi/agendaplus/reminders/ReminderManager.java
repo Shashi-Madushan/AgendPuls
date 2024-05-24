@@ -46,6 +46,7 @@ public class ReminderManager {
                 long delay = calculateDelay(reminder.getDate().toLocalDate(), reminder.getReminderTime());
                 scheduler.schedule(() -> {
                     showAlert("Reminder: " + reminder.getTaskTitle(), "You have a reminder!");
+
                     reminder.setShown(true);
                     reminders.remove(reminder);
                     Platform.runLater(() -> {
